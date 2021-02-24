@@ -1,0 +1,4 @@
+# A good tool to refer to is https://gitignore.io 
+# Generated files at default location
+/public/
+/resources/_gen
