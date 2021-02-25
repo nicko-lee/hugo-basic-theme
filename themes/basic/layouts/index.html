@@ -3,4 +3,11 @@
 
     {{ .Content }}
 
+    {{ range first 1 ( where .Site.RegularPages "Type" "in" "projects" ).ByDate.Reverse }}
+        <section class="project">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        </section>
+    {{ end }}
+
+
 {{ end }}
